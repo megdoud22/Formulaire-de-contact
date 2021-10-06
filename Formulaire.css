@@ -1,1 +1,16 @@
 
+//Ici on affiche un Message d'erreur en CSS
+
+
+
+input:valid {
+  border: 5px double green;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+#Fatal-Error! {
+  color: red;
+}

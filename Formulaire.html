@@ -1,1 +1,182 @@
+<!DOCTYPE html>
 
+<html>
+	<head>
+	     <meta charset="utf-8"/>
+	     <link rel="stylesheet" href="Formulaire.css"/>
+	     <title>Page de formulaire pour inscription aux concours de la fonction publique</title>
+		  
+    </head>
+
+    <body>
+
+   	<h1>Inscription pour passage aux tests de positionnement informatique</h1>
+   	     
+      <h2>Formulaire à remplir :</h2>
+         
+   	
+
+  	    <form id="inscription">
+       <p id="Fatal-Error!"></p>
+       <fieldset class="fieldset">
+
+        <legend class="legend"><h2>Vos coordonnées :</h2></legend> 
+        <h2>
+           Veuillez indiquer votre Sexe :
+        </h2>
+             
+
+	        <input type="radio" name="Sexe" value="Sexe-m" id="masculin" checked/>
+	        <label for="masculin">Masculin</label>
+	        <br/>
+	        <input type="radio" name="Sexe" value="Sexe-f" id="feminin"/>
+	        <label for="feminin">Féminin</label>
+
+	        </br>
+	        </br>
+            
+            <label for="nom">votre nom :</label>
+            <input type="text" name="Nom" id="nom"  maxlength="25" placeholder="ici" autofocus />
+	        
+	        </br>
+	        </br>
+
+            <label for="prenom">votre prénom :</label>
+	        <input type="text" name="Prenom" id="prenom"  maxlength="25" placeholder="ici" />
+
+	        </br>
+	        </br>
+
+            <label for="date">votre date de naissance:</label>
+	        <input type="date" name="la-Date" id="date"/>
+	     
+	        </br>
+	        </br>
+	        <label for="email">votre e-mail :</label>
+	        <input type="email" name="Email" id="email" size="25" maxlength="25" placeholder="Ex: Fatah.megdoud@yahoo.fr"/>
+	        </br>
+	        </br>
+	        <label for="telephone">votre numéro de téléphone :</label>
+	        <input type="tel" name="telephone" id="telephone" maxlength="12"/>
+	        </br>
+	        </br>
+	        <label for="Adresse">Votre adresse :</label>
+	        <input type="text" name="Adresse" id="adresse" size="15" maxlength="30" placeholder="Ex: 14 Rue de Paris"/>
+	        </br>
+	        </br>
+	        <label for="code-postal">Votre code postale :</label>
+	        <input type="text" name="code-postal" id="code-postal" size="3" maxlength="5"/>
+	        </br>
+	        </br>
+            <label for="pays">Dans quel pays habitez-vous :</label><br/>
+            </br>
+            <select name="pays" id="pays">
+
+	       	  <optgroup label="Europe">
+		           <option value="Allemagne">Allemagne</option>
+		           <option value="France">France</option>
+		           <option value="Italie">Italie</option>                                                 
+		           <option value="Royaume-Uni">Royaume-Uni</option>
+		      </optgroup>
+
+	          <optgroup label="Afrique">
+		           <option value="Algerie" >Algerie</option>
+		           <option value="Maroc" selected>Maroc</option>
+		           <option value="Tunisie">Tunisie</option>
+		           <option value="Egypte">Egypte</option>
+		           <option value="Senegal">Senegal</option>
+		      </optgroup>
+
+	          <optgroup label="Asie">
+		           <option value="Chine" >Chine</option>
+		           <option value="Russie">Russie</option>
+		           <option value="Japon">Japon</option>
+		      </optgroup>
+
+	        </select>
+
+	       
+	    </fieldset>
+        </br>
+        </br>
+
+    
+    <label for="Profil"><h2>Quel est votre niveau en informatique :</h2></label><br/>   
+    <select name="Statut" id="Profil">
+        <option value="Débutant">Débutant</option>
+		<option value="Intermédiaire">Intermédiaire</option>
+		<option value="Avancé">Avancé</option>
+		<option value="Expérimenté">Expérimenté</option>
+		<option value="Maîtrise">Maîtrise</option>
+    </select>
+
+    <h2>Veuillez cocher votre domaine d'études : </h2>
+
+    <input type="radio" name="Domaine" value="Dev-infor" id="Dev"/>
+	<label for="Dev">Développement informatique</label>
+	        <br/>
+	<input type="radio" name="Domaine" value="Res-System" id="Res"/>
+	<label for="Res">Réseaux et système</label>
+	        <br/>
+	<input type="radio" name="Domaine" value="Programmation" id="Prog" />
+	<label for="Prog">Programmation informatique</label>
+            <br/>
+	<input type="radio" name="Domaine" value="Securite" id="Dev-infor"/>
+	<label for="Dev-infor">Sécurité informatique</label>      
+
+   
+
+    <h2>Cochez vos préférences et loisirs :</h2>
+       <br/>
+       <input type="checkbox" name="sport" id="sport"/> 
+       <label for="sport">Sport</label>
+       <br/>
+       <input type="checkbox" name="Voyage" id="Voyage"/> 
+       <label for="Voyage">Voyages</label>
+       <br/>
+       <input type="checkbox" name="art" id="art"/> 
+       <label for="art">Arts et cultures</label>
+       <br/>
+       <input type="checkbox" name="jeux" id="jeux"/> 
+       <label for="jeux">Jeux et divertissments</label>
+
+       <h2>Veuillez choisir un nombre entre 1 et 10 :</h2>
+       <br/>
+       <input type="number" min="1" max="10" step="">
+
+
+       <h2>Télécharger votre fichier à envoyer</h2>
+       <br/>
+       <input type="file" name="monfichier"/>
+    
+       <br>
+       <br>
+       <br>
+    <fieldset class="fieldset">
+          
+       <legend class="legendF"><h2>Votre message :</h2></legend> 
+       </br>
+       </br>
+       <textarea class="textarea" name="precisions" id="precisions" cols="70" rows="10" maxlength="300"></textarea>
+       </p>
+       </br>
+       </br>
+        
+    </fieldset>
+       </br>
+       </br>
+       <input type="submit" name="Valider"/>
+       </br>
+       </br>
+       
+
+    </form>
+   
+
+ 
+	
+   
+<script src="Formulaire.js"></script>
+</body>
+
+</html>
