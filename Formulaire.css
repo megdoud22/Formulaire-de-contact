@@ -13,4 +13,6 @@ input:invalid {
 
 #erreur {
   color: red;
+  border: 3px double yellow;
+ 
 }
